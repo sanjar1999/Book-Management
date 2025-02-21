@@ -5,9 +5,11 @@ namespace Book_Management.Configurations;
 
 public static class ServiceConfig
 {
-    public static void AddServices(this IServiceCollection services, IConfiguration configuration)
+    public static void AddServices(this IServiceCollection services)
     {
         services.AddScoped<IBookService, BookService>();
         services.AddScoped<IAuthorService, AuthorService>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IJwtService, JwtService>();
     }
 }

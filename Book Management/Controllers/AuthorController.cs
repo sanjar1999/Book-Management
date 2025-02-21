@@ -1,10 +1,12 @@
 ﻿using Application.DTOs.AuthorDTOs;
 using Application.DTOs.ResponseDTOs;
 using Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Book_Management.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class AuthorsController : ControllerBase

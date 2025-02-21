@@ -25,8 +25,7 @@ Book Management API is a RESTful web service that allows users to manage books a
 ### Steps to Run
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repository/book-management-api.git
-   cd book-management-api
+   https://github.com/sanjar1999/Book-Management.git
    ```
 2. Update the `appsettings.json` file with your database connection string and JWT secret key.
 3. Run database migrations:
